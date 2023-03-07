@@ -1,0 +1,23 @@
+ {% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello World</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+	<h1>Welcome Programmers</h1>
+	
+<p style="color: brown;">This website is GeeksforGeeks. lknhhnon</p>
+  <div style="display: flex;">
+    <div style="background-color: blue;height: 100;width: 100;">ersdfs</div>
+	<div style="background-color: rgb(11, 236, 97);height: 100;width: 100;">sdgsdgfsd</div>
+  </div>
+
+  {% for i in students%}
+      <h1>{{i.name}}</h1>
+      <h4>{{i.rollnumber}}</h4>
+      <h6>{{i.department}}</h6>
+  {%endfor%}
+</body>
+</html>
